@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="css.css" />
+     <link rel="stylesheet" href="new2.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: grey;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color:#999999}
+
+.button:active {
+  background-color: #999999;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+<body>
+	<div style="padding-left:50px">
+	<h1>Welcome to Mars Colonization Mission 2020!</h1>
+
+	<h3>Hello! I am rover 'Perseverance' and here is a task for you!</h2>
+	<h3>I need to collect soil samples for analysis so please follow the instructions given and help me out!</h3>
+	<h3>Select the number of locations to collect soil samples and mark the points by clicking on my grid map </h3>
+	<h3>My algorithm will help us to find the shortest path to visit all the location spending minimum fuel!</h3>
+	 <h5>
+ 	<pre>Instructions:
+ 	1). Enter the number of locations in the text area
+ 	2). And click Ready!
+ 	3). Now select the points by clicking on the left quadrant of the map grid
+ 	Now we are good to go!
+ 	The left quadrant of grid displays the best path calculated till current time and the right one displays all possible combinations!</pre>
+ </h5>
+	<input type=button onClick="location.href='brute.html'" value='Brute Force algorithm'  class="button">
+  <input type=button onClick="location.href='geneticAlgo.html'" value='Genetic Algorithm'  class="button">
+	<div style="padding-left:900px">
+		 <img src="rover.png" alt="rover" style="width:80%;align:bottom" >
+	</div>
+</div>
+</body>
+</html>
+
