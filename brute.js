@@ -18,7 +18,7 @@ function setup() {
 
   createCanvas(1455, 550);
   background(0);
-   frameRate(20);
+   frameRate(1);
   // Draw grid
   var l = 0;
   strokeWeight(1);
@@ -28,6 +28,8 @@ function setup() {
     line(l, 0, l, height);
     l += grid;
   }
+  strokeWeight(25);
+  line(width/2,0,width/2,height)
 
 }
 
@@ -41,7 +43,7 @@ function mousePressed()
     var v=createVector(mouseX,mouseY);
     locations.push(v);
     count++;
-   
+    text(`Mark more : ${(totalLocations-count)} locations`,10,50)
 }
 if(count==totalLocations)
 {
@@ -80,7 +82,7 @@ function draw() {
   console.log(recordDistance);
   strokeWeight(10);
   text(`This is our best path
-    Best Distance: ${(recordDistance)}`,width/4,50)
+    Best Distance: ${(recordDistance)} kms!`,width/4,50)
   var l = 0;
   strokeWeight(1);
   stroke(151);

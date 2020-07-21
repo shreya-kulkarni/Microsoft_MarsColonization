@@ -20,6 +20,7 @@ var click=0;
 function start(temp)
 {
 totalLocations=temp;
+
 console.log(totalLocations);
 }
 
@@ -56,6 +57,7 @@ function mousePressed()
     var v=createVector(mouseX,mouseY);
     locations.push(v);
     count++;
+     text(`Mark ${(totalLocations-count)} more locations`,10,50)
     {for(var i=0;i<totalLocations;i++)
   {
     order[i]=i;
@@ -81,9 +83,9 @@ function draw() {
   line(width/2,0,width/2,height)
   strokeWeight(10);
   text(`This is our best path
-    Best Distance: ${(recordDistance)}`,width/4,50)
+    Best Distance: ${(recordDistance)} kms!`,width/4,50)
   strokeWeight(10);
-  text(`Current Total Distance of the given path: ${(current)}`,3*width/4-30,50)
+  text(`Current Total Distance of the given path: ${(current)} kms!`,3*width/4-30,50)
 
 
     if(count==totalLocations)
@@ -111,9 +113,9 @@ function draw() {
   line(width/2,0,width/2,height)
   strokeWeight(10);
   text(`This is our best path
-    Best Total Distance: ${(recordDistance)}`,width/4,50)
+    Best Total Distance: ${(recordDistance)} kms!`,width/4,50)
   strokeWeight(10);
-  text(`Current Total Distance of the given path: ${(current)}`,3*width/4-30,50)
+  text(`Current Total Distance of the given path: ${(current)} kms!`,3*width/4-30,50)
 
 
   //use genetic algorithm functions
