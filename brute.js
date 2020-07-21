@@ -18,7 +18,7 @@ function setup() {
 
   createCanvas(1455, 550);
   background(0);
-   frameRate(1);
+   frameRate(3);
   // Draw grid
   var l = 0;
   strokeWeight(1);
