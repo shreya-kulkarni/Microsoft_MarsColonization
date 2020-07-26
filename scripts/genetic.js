@@ -112,7 +112,7 @@ function draw() {
   strokeWeight(25);
   line(width/2,0,width/2,height)
   strokeWeight(10);
-  text(`This is our best optimised path yet
+  text(`This is our best path
     Best Total Distance: ${(recordDistance)} kms!`,width/4,50)
   strokeWeight(10);
   text(`Current Total Distance of the given path: ${(current)} kms!`,3*width/4-30,50)
